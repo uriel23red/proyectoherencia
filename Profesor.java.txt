@@ -1,0 +1,25 @@
+// Otra clase derivada
+public class Profesor extends Persona {
+
+    private String materia;
+
+    public Profesor(String nombre, int edad, String materia) {
+
+        super(nombre, edad);
+
+        this.materia = materia;
+    }
+
+    @Override
+    public void mostrarDatos() {
+
+        super.mostrarDatos();
+
+        System.out.println("Materia: " + materia);
+    }
+
+    public void impartirClase() {
+
+        System.out.println(nombre + " está impartiendo la materia de " + materia);
+    }
+}
